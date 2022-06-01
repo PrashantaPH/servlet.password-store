@@ -1,0 +1,33 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>myuser</servlet-name>
+		<servlet-class>com.ty.password.store.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myuser</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>employee</servlet-name>
+		<servlet-class>com.ty.password.store.controller.EmployeeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employee</servlet-name>
+		<url-pattern>/myemployee</url-pattern>
+	</servlet-mapping>
+	<servlet-name>employee</servlet-name>
+	<servlet-class>com.ty.password.store.controller.EmployeeController</servlet-class>
+	<servlet>
+		<servlet-name>user</servlet-name>
+		<servlet-class>com.ty.password.store.controller.ValidateUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>/validateuser</url-pattern>
+	</servlet-mapping>
+</web-app>
